@@ -1,0 +1,42 @@
+<!--////////////////////////////////////Container-->
+		<section id="container">
+			<div class="wrap-container clearfix">
+				<div id="main-content">
+					<div class="wrap-content zerogrid ">
+						<article class="background-gray">
+							<div class="art-header">
+								<h6>If you have any problems fill out the form we will help you as soon as possible!</h6>
+								<hr class="line-2">
+								<h2>Contact form</h2>
+							</div>
+							<div class="art-content">
+								<div class="row">
+									<div id="contact_form">
+										<%= form_for :user, url: {action: "sendmail"}, html: {id: "ff"} do |f| %>
+											<label class="row">
+												<div class="col-1-2">
+													<div class="wrap-col">
+														<%= f.text_field :name, id: "name", required: true,  placeholder: "Enter name" %>
+													</div>
+												</div>
+												<div class="col-1-2">
+													<div class="wrap-col">
+														<%= f.email_field :email,  id: "email", required: true,  placeholder: "Enter email" %>
+													</div>
+												</div>
+											</label>
+											<label class="row">
+												<div class="wrap-col">
+													<%= f.text_area :message, id: "message", class: "form-control", required: true, as: :text, cols: "25", rows: "4",placeholder: "Describe the problem" %>
+												</div>
+											</label>
+											<center><%= f.submit 'Send Message', class: "button sendButton" %></center>
+										<% end %>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>

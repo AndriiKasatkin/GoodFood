@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GoodFood</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class="wrap-body">
+
+  	<header class="zerogrid">
+		<div class="logo">
+			<hr class="line-1">
+			<%= link_to "GoodFood", root_path %>
+			<span>Tasty food is great!</span>
+			<hr class="line-1">
+		</div>
+		<div id='cssmenu' class="align-center">
+			<ul>
+			   <li class="active"><%= link_to "Home", root_path %></li>
+			   <li class='last'><%= link_to "Contacts", new_contact_path %></li>
+			</ul>
+		</div>
+	</header>
+
+    <%= yield %>
+    </div>
+  </body>
+</html>
