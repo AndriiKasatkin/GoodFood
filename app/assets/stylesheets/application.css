@@ -200,7 +200,7 @@ article:after, article:before{clear: both; content: '\0020'; display: block; vis
 article img{height: auto;width: 100%; border: none;}
 article .art-header{padding: 40px 0 20px;}
 article .art-header h2{color: #333;font-family: 'Dancing Script', cursive;font-size: 70px;font-weight: 500;padding: 0;margin: 0;}
-article .art-header h6{color: #BE0A0A;font-family: 'Dancing Script', cursive;font-size: 30px;font-weight: 500;padding: 0;margin: 0;}
+article .art-header h6{color: #BE0A0A;font-family: 'Dancing Script', cursive;font-size: 30px;font-weight: 500;padding: 0;margin: 0;padding-bottom: 30px;}
 article .art-content{padding: 20px;}
 article .art-content blockquote {border-left: 3px solid #1c7791;font-size: 18px;margin: 0 50px;font-style: italic;color: #666;padding-left: 20px;}
 article .art-content ol {float: left;text-align: justify;margin: 10px 50px;font-size: 16px;list-style-type: circle;}
