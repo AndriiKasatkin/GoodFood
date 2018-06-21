@@ -86,6 +86,22 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.action_mailer.delivery_method = :smtp
+    # SMTP settings for gmail
+    config.action_mailer.smtp_settings = {
+     :address              => "smtp.gmail.com",
+     :port                 => 587,
+     :domain               => 'mail.google.com',
+     :authentication       => "plain",
+     :enable_starttls_auto => true,
+     :user_name            => 'good.food.uzhnu@gmail.com',
+     :password             => 'GoodFood1998'
+
+    }
+
+  config.action_mailer.default_url_options = { host: 'https://my-support-app.herokuapp.com/' }
+  config.action_mailer.perform_deliveries = true
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
